@@ -1,0 +1,31 @@
+{
+    "name": "flexsheet",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": ["https://www.supremenewyork.com/"],
+            "js": ["jquery-3.4.1.min.js"]
+        },
+        {
+            "matches": ["https://www.supremenewyork.com/shop/mobile/*"],
+            "js": ["jquery-3.4.1.min.js", "atc.js"]
+        },
+        {
+            "matches": ["https://www.supremenewyork.com/checkout"],
+            "js": ["jquery-3.4.1.min.js", "checkout.js"]
+        }
+    ],
+    "background": {
+        "scripts":
+            [
+                "content.js", "jquery-3.4.1.min.js"
+            ]
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Popup",
+        "default_icon": "suppic.png"
+    },
+    "permissions": [ "webRequest", "webRequestBlocking", "unlimitedStorage", "tabs", "notifications", "tabCapture", "https://*.supremenewyork.com/", "background", "activeTab", "<all_urls>", "storage" ]
+}

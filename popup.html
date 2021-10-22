@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Popup</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontawesome.min.css">
+        <link rel="stylesheet" href="all.min.css">
+    </head>
+    <body>
+        <div class="title-area">
+            <img src="sub_suppic.png" class="top-suppic" draggable="false">
+            <p class="top-head">Supreme ATC</p>
+            <p class="top-sub-head">by olicer ;D</p>
+        </div>
+        
+        <div class="main-content" id="main-content" style="display: block;">
+            <p class="main-head">Terminal</p>
+
+            <div class="item_name_hold">
+                <input type="text" class="item_name" name="item_name" placeholder="Item Name..." id="item_name">
+            </div>
+
+            <div class="item_size_hold">
+                <input type="text" class="item_size" name="item_size" placeholder="Item Size..." id="item_size">
+            </div>
+
+            <div class="item_type_hold">
+                <input type="text" class="item_type" name="item_type" placeholder="Item Type..." id="item_type">
+            </div>
+
+            <div class="item_color_hold">
+                <input type="text" class="item_color" name="item_color" placeholder="Item Color..." id="item_color">
+            </div>
+
+            <div class="item_qty_hold">
+                <input type="text" class="item_qty" name="item_qty" placeholder="Item Quantity..." id="item_qty" value="1">
+            </div>
+
+            <input type="button" class="item_save" name="submit" value="Save" id="item_save">
+
+            <input type="button" class="item_run" name="submit" value="Run" id="item_run">
+
+            <input type="button" class="more_info_btn" name="submit" value="Edit Info" id="add_info">
+
+            <input type="button" class="logout_run" name="submit" value="Logout" id="logout_run">
+
+        </div>
+        <div class="status-content" id="status-content" style="display: block;">
+            <p class="status-head">Status</p>
+            <p id="status-progress" class="status-progress"></p>
+            <input type="button" class="item_run" name="submit" value="Restart" id="item_restart">
+            <div class="item-info-hold">
+                <p class="item-info-txt" id = "ItemNameDisplay"></p>
+                <p class="item-info-txt" id = "ItemSizeDisplay"></p>
+                <p class="item-info-txt" id = "ItemTypeDisplay"></p>
+                <p class="item-info-txt" id = "ItemColorDisplay"></p>
+            </div>
+        </div>
+        <div class="user-content" id="user-content" style="display: block;">
+            <input type="button" class="go_to_dash" name="submit" value="Dashboard" id="go_to_dash">
+            <p class="user-head">Info</p>
+
+            <div class="user_name_hold">
+                <input type="text" class="user_name" name="user_name" placeholder="Full Name..." id="user_name">
+            </div>
+
+            <div class="user_email_hold">
+                <input type="text" class="user_email" name="user_email" placeholder="Email..." id="user_email">
+            </div>
+
+            <div class="user_phone_hold">
+                <input type="text" class="user_phone" name="user_phone" placeholder="Phone Number..." id="user_phone">
+            </div>
+
+            <div class="user_address_hold">
+                <input type="text" class="user_address" name="user_address" placeholder="Address..." id="user_address">
+            </div>
+
+            <div class="user_address2_hold">
+                <input type="text" class="user_address2" name="user_address2" placeholder="Address 2..." id="user_address2">
+            </div>
+
+            <div class="user_zip_hold">
+                <input type="text" class="user_zip" name="user_zip" placeholder="Zip..." id="user_zip">
+                <input type="text" class="user_city" name="user_city" placeholder="City..." id="user_city">
+            </div>
+
+            <div class="user_state_hold">
+                <select placeholder="State..." class="state_select" id="state_select">
+                    <option value="AL">AL</option>
+                    <option value="AK">AK</option>
+                    <option value="AR">AR</option>
+                    <option value="AS">AS</option>
+                    <option value="AZ">AZ</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DC">DC</option>
+                    <option value="DE">DE</option>
+                    <option value="FL" selected="selected">FL</option>
+                    <option value="FM">FM</option>
+                    <option value="GA">GA</option>
+                    <option value="GU">GU</option>
+                    <option value="HI">HI</option>
+                    <option value="IA">IA</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="MA">MA</option>
+                    <option value="MD">MD</option>
+                    <option value="ME">ME</option>
+                    <option value="MH">MH</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MO">MO</option>
+                    <option value="MP">MP</option>
+                    <option value="MS">MO</option>
+                    <option value="MT">MT</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="NE">NE</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NV">NV</option>
+                    <option value="NY">NY</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="PR">PR</option>
+                    <option value="PW">PW</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VA">VA</option>
+                    <option value="VI">VI</option>
+                    <option value="VT">VT</option>
+                    <option value="WA">WA</option>
+                    <option value="WI">WI</option>
+                    <option value="WV">WV</option>
+                    <option value="WY">WY</option>
+                </select>
+            </div>
+
+            <div class="user_country_hold">
+                <select placeholder="Country..." class="country_select" id="country_select">
+                    <option value="USA" selected="selected">USA</option>
+                </select>
+            </div>
+
+            <div class="user_card_hold">
+                <input type="text" class="user_card" name="user_card" placeholder="Card Number..." id="user_card">
+            </div>
+
+            <div class="user_pin_hold">
+                <input type="text" class="user_pin" name="user_pin" placeholder="Pin..." id="user_pin">
+                <select placeholder="Month..." class="month_select" id="month_select">
+                    <option value="01" selected="selected">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select placeholder="Year..." class="year_select" id="year_select">
+                    <option value="2020" selected="selected">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+            </div>
+            <input type="button" class="deet_save" name="submit" value="Save" id="deet_save">
+
+            <div class="leg-check-hold">
+                <p class="leg-check-txt">Legacy Checkout</p>
+                <div class="leg-check-wrap" id="leg-check-wrap"><i class="fas" id="legacy-check"></i></div>
+            </div>
+            <div class="chk-delay-hold">
+                <p class="chk-delay-txt">Checkout Delay</p>
+                <input type="text" class="chk_delay" name="chk_delay" placeholder="Time (Seconds)..." id="chk_delay">
+                <input type="button" class="chk_delay_save" name="submit" value="Save" id="chk_delay_save">
+            </div>
+
+        </div>
+        <div class="login-content" id="login-content" style="display: block;">
+            <p class="login-head">Login</p>
+
+            <div class="login_username_hold">
+                <input type="text" class="login_username" name="login_username" placeholder="Username..." id="login_username">
+            </div>
+
+            <div class="login_password_hold">
+                <input type="text" class="login_password" name="login_password" placeholder="Password..." id="login_password">
+            </div>
+
+            <input type="button" class="login_run" name="submit" value="Login" id="login_run">
+
+            <div class="login-error-msg-hold" id="login-error-msg-hold" style="display: none;">
+                <p class="login-error-msg" id="login-error-msg"></p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="f-info">olicer - 2020</p>
+            <a href="info.txt" class="f-info2" target="_blank">[txt file if u dont kno wat 2 do]</a>
+        </div>
+    </body>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="content.js"></script>
+</html>
